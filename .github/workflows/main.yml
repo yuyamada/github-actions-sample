@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - run: echo main workflow is called on branch: "${GITHUB_REF}"
+      - run: echo main workflow is called on branch "${GITHUB_REF}"
         env:
           GITHUB_REF: ${{ github.ref }}
 
