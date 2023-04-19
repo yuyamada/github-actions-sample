@@ -26,3 +26,4 @@ jobs:
       - run: echo sub workflow is called on branch "${GITHUB_REF}"
         env:
           GITHUB_REF: ${{ github.ref }}
+      - run: sleep 30
